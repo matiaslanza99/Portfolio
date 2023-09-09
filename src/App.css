@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 .ctn-images {
   display: flex;
   flex-direction: row;
@@ -38,7 +41,6 @@
   padding: 1ch;
   transition: transform 0.3s ease-in-out;
 }
-
 .ctn-img:hover img {
   transform: scale(1.05);
 }
@@ -154,6 +156,11 @@
 .form-input{
   border: solid 1px rgb(176, 223, 255);
   box-shadow:0px 2px 5px 0px rgb(255, 153, 153);
+}
+.form-input-textarea{
+  border: solid 1px rgb(176, 223, 255);
+  box-shadow:0px 2px 5px 0px rgb(255, 153, 153);
+  height: 80%;
   resize: none;
 }
 
@@ -162,8 +169,50 @@
   box-shadow:2px 3px 2px 2px rgb(255, 111, 111);
   transition: box-shadow 0.5s, border 0.4s;
 }
+
+.form-input-textarea:focus{
+  border: solid 1px rgb(133, 205, 253);
+  box-shadow:2px 3px 2px 2px rgb(255, 111, 111);
+  transition: box-shadow 0.5s, border 0.4s;
+}
 .tecsUsed{
+  font-size: small;
   margin: 2px;
-  background-color: black;
-  color: aqua;
+  padding: 5px;
+  color: white;
+  cursor: default;
+}
+.tecsUsed:hover {
+  color: rgb(231, 231, 231);
+}
+.navigation {
+  position: fixed;
+  bottom: 50vh;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+.navigation img {
+  width: 17px;
+  height: 17px;
+  margin: 5px; /* Espacio entre las imágenes */
+  background-color: none; /* No es una propiedad válida, cambia esto */
+}
+
+.contImgLateral:hover {
+  margin: 7px;
+}
+
+.contImgLateral {
+  margin: 3px;
+  padding: 2px;
+  border-radius: 30%;
+  background-color: pink; /* Establece el fondo inicial a rosa */
+}
+
+.contImgLateral:active {
+  background-color: pink; /* Mantén el fondo como rosa al hacer clic */
 }
