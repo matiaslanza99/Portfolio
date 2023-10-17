@@ -84,7 +84,9 @@ function Contact() {
                         type="email" 
                         name="user_email"
                         placeholder="Ingresa aqui tu email" 
-                        className="form-input"/>
+                        className="form-input"
+                        required  
+                      />
                     </Form.Group>
                   </Col>
                   <Col>
@@ -94,7 +96,8 @@ function Contact() {
                         name="user_name" 
                         type="text" 
                         placeholder="Ingresa aqui tu nombre" 
-                        className="form-input" 
+                        className="form-input"
+                        required
                       />
                     </Form.Group>
                   </Col>
@@ -108,6 +111,7 @@ function Contact() {
                         className="form-input-textarea"
                         name="message"
                         placeholder="Escribe tu mensaje aquí..."
+                        required
                       />
                    
                     <button type="submit" className="btn-submit">

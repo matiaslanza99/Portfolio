@@ -1,26 +1,50 @@
 import "./App.css"
 
 import Container from 'react-bootstrap/Container';
-
-import NavBar from "./components/navBar";
+import NavBar from "./components/navBar"
 import Footer from "./components/footer";
 import AboutMe from "./components/aboutMe";
 import Proyects from "./components/proyects";
 import Contact from "./components/contact";
 import Home from "./components/home";
-import LateralNav from "./components/lateralNav";
-import Section from "./FramerMotion/Section";
+import {Parallax,ParallaxLayer} from "@react-spring/parallax";
+
 function App() {
   return (
     <>
-      <Container fluid className="container-full-height aling-items-center">
-      <Home/>
-      <Section><AboutMe/></Section>
-      <Section><Proyects/></Section>      
-      <Section><Contact/></Section>
-      <LateralNav/> 
-      </Container>
-      <Footer/>
+      <NavBar/>
+        <Parallax pages={4}>
+        <Container fluid>
+          <ParallaxLayer 
+            offset={0}
+            speed={0.2}
+            >
+            <Home/> 
+          </ParallaxLayer>
+
+          <ParallaxLayer 
+            offset={1}
+            speed={0.3}>
+            <AboutMe/>
+          </ParallaxLayer>
+
+          <ParallaxLayer 
+            offset={2}
+            speed={0.2}
+            >
+            <Proyects/>     
+          </ParallaxLayer>
+
+            <ParallaxLayer 
+              offset={3}
+              speed={0.3}
+            >
+              <Contact/>
+              <Footer/>
+            </ParallaxLayer>
+     
+          </Container>
+        </Parallax>
     </>
   );
 }
