@@ -1,64 +1,35 @@
 @keyframes moveNube1 {
   0% {
-    transform: translateX(-590px);
+    transform: translateX(-620px);
     opacity: 0.6;
   }
   50% {
-    transform: translateX(-560px);
-    opacity: 0.80;
+    transform: translateX(-600px);
+    opacity: 0.70;
   }
   100% {
-    transform: translateX(-590px);
+    transform: translateX(-620px);
     opacity: 0.6;
   }
 }
-@keyframes moveNube12 {
-  0% {
-    transform: translateX(-590px);
-    opacity: 0.9;
-  }
-  50% {
-    transform: translateX(-560px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-590px);
-    opacity: 0.9;
-  }
-}
+
 
 @keyframes moveNube2 {
   0% {
-    transform: scaleX(-1) translateX(-80px);
+    transform: scaleX(-1) translateX(-90px);
     opacity: 0.6;
   }
   55% {
-    transform: scaleX(-1) translateX(-60px);
+    transform: scaleX(-1) translateX(-80px);
     opacity: 0.85;
   }
   100% {
-    transform: scaleX(-1) translateX(-80px);
+    transform: scaleX(-1) translateX(-90px);
     opacity: 0.6;
   }
 }
-@keyframes moveNube22 {
-  0% {
-    transform: scaleX(-1) translateX(-80px);
-    opacity: 0.9;
-  }
-  55% {
-    transform: scaleX(-1) translateX(-60px);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleX(-1) translateX(-80px);
-    opacity: 0.9;
-  }
-}
 
-*{
-  scroll-behavior: smooth;
-}
+
 .ctn-images {
   display: flex;
   flex-direction: row;
@@ -74,7 +45,6 @@
   margin: 30px;
   overflow: hidden;
 }
-
 .ctn-img h6 {
   position: absolute;
   top: 50%;
@@ -308,35 +278,4 @@
 }
 .tecsUsed:hover {
   color: rgb(231, 231, 231);
-}
-.navigation {
-  position: fixed;
-  bottom: 50vh;
-  right: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  border-radius: 10px;
-}
-
-.navigation img {
-  width: 17px;
-  height: 17px;
-  margin: 5px; /* Espacio entre las imágenes */
-  background-color: none; /* No es una propiedad válida, cambia esto */
-}
-
-.contImgLateral:hover {
-  margin: 7px;
-}
-
-.contImgLateral {
-  margin: 3px;
-  padding: 2px;
-  border-radius: 30%;
-  background-color: pink; /* Establece el fondo inicial a rosa */
-}
-
-.contImgLateral:active {
-  background-color: pink; /* Mantén el fondo como rosa al hacer clic */
 }
