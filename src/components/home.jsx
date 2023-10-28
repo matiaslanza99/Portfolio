@@ -37,3 +37,34 @@ function Home() {
 }
 
 export default Home;
+/*
+  import React, { useState } from 'react';
+
+function ImageGallery(props) {
+    // Utilizamos un objeto para rastrear el estado de carga de cada imagen.
+    const [loadedImages, setLoadedImages] = useState({});
+
+    const handleImageLoad = (src) => {
+        setLoadedImages(prevState => ({
+            ...prevState,
+            [src]: true
+        }));
+    };
+
+    return (
+        <div>
+            {props.images.map((imageSrc, index) => (
+                <img
+                    key={index}
+                    style={{ display: loadedImages[imageSrc] ? 'block' : 'none' }}
+                    src={imageSrc}
+                    alt={Image ${index}}
+                    onLoad={() => handleImageLoad(imageSrc)}
+                />
+            ))}
+        </div>
+    );
+}
+
+export default ImageGallery;
+*/
