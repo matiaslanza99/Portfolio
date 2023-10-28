@@ -37,13 +37,14 @@ function App() {
 
             <ParallaxLayer 
               offset={3}
-              speed={0.3}
+              speed={0.1}
             >
               <Contact/>
-              <Footer/>
+
             </ParallaxLayer>
-     
+            
           </Container>
+              <Footer/>
         </Parallax>
     </>
   );

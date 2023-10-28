@@ -49,17 +49,12 @@ function Contact() {
             })
           );
           console.log("all Inputs", input);
-        }
-        
+        } 
     const handleSubmit = (event) => {
       event.preventDefault();
-    
-      // Configuración para EmailJS (debes reemplazar con tus propios valores)
       const serviceID = "service_tohu2s9";
       const templateID = "template_fn5ngde";
       const userID = "u9m5VHUhB9zLn3OEY";
-    
-      // Enviar el correo electrónico utilizando EmailJS
       emailjs.sendForm(serviceID, templateID, event.target, userID)
         .then((response) => {
           console.log("Correo electrónico enviado exitosamente", response);
@@ -71,6 +66,7 @@ function Contact() {
         });
     };
     return (
+
         <Row className='secciones align-items-center justify-content-center'id="contacto"> 
 
           <Col xs={8} className="justify-content-center">
@@ -124,6 +120,7 @@ function Contact() {
           </Col>
 
         </Row>
+     
     );
   }
   
