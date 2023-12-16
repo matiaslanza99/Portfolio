@@ -160,7 +160,7 @@
 } 
 
 .container-full-height {
-  min-height: 90vh;
+  min-height: 98vh;
   display: flex;
   flex-direction: column;
 }

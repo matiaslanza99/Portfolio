@@ -12,13 +12,11 @@ function Proyects() {
               <div className="ctn-images">
               <div className="ctn-img">
                 
-                    <h5>ONE ECommerce</h5>
+                    <h5>ONE-ECommerce</h5>
                     <p>
-                      Pagina e-commerce donde se puede comprar y vender.
+                      Página de comercio electrónico donde se puede comprar y vender.
                     </p>
-                    <Badge className="tecsUsed">HTML</Badge>
-                    <Badge className="tecsUsed">CSS</Badge>
-                    <Badge className="tecsUsed">JavaScript</Badge>
+                    
                     <Badge className="tecsUsed">React</Badge>
                     <Badge className="tecsUsed">Redux</Badge>
                     <Badge className="tecsUsed">Firebase</Badge>
@@ -47,17 +45,16 @@ function Proyects() {
 
                 <div className="ctn-img">
                
-                    <h5>Videgames PI</h5>
+                    <h5>Videogames-PI</h5>
                     <p>
-                      Este proyecto se basa en sacar buscar de videojuegos en una api externa para mostrarlos y filtrarlos.
+                      Este proyecto se basa en buscar videojuegos en una API externa para mostrarlos y filtrarlos.
                     </p>
-                    <Badge className="tecsUsed">HTML</Badge>
-                    <Badge className="tecsUsed">CSS</Badge>
-                    <Badge className="tecsUsed">JavaScript</Badge>
+                   
                     <Badge className="tecsUsed">React</Badge>
                     <Badge className="tecsUsed">Redux</Badge>
                     <Badge className="tecsUsed">Sequelize</Badge>
-               
+                    <Badge className="tecsUsed">Express.js</Badge>
+                    <Badge className="tecsUsed">PostgreSQL</Badge>
                 </div>
               </div>
             </Col>

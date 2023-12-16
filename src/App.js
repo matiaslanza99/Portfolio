@@ -12,7 +12,7 @@ import {Parallax,ParallaxLayer} from "@react-spring/parallax";
 function App() {
   return (
     <>
-      <NavBar/>
+        <NavBar/>
         <Parallax pages={4}>
         <Container fluid>
           <ParallaxLayer 
