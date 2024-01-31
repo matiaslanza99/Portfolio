@@ -39,7 +39,7 @@ nav {
     padding-left: 8px;
     padding-right: 8px;
     gap: .3rem;
-    transition: transform 0.7s ease-in-out;
+    transition: clip-path 0.7s ease-in-out;
 }
 
 .nav-list li {
@@ -54,7 +54,10 @@ nav {
   z-index: 1000; 
   overflow: hidden;
   border: none;
-  transition: transform 0.7s ease-in-out;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 0.7s ease-in-out;
+  box-shadow: inset;
+  border-radius: 10%;
 }
 .abrir img {
   width: 40px;
@@ -78,10 +81,15 @@ nav {
 
 .cerrar_menu{
     background-color: black;
-    width: 30px;
+    width: 32px;
     height: 30px;
     align-self: flex-end;
     transition: transform 0.7s ease-in-out;
+    border: none;
+    border-radius: 20%;
+}
+.cerrar_menu:hover{
+  background-color: rgb(184, 0, 0);
 }
 .abrir_menu.hidden {
   display: none;

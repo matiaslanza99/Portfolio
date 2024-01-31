@@ -8,7 +8,7 @@ function Footer() {
           <a className="icono-redes fs-4" href="https://github.com/matiaslanza99">
             <abbr title="Visitar GitHub"><i className="bi bi-github"></i></abbr>
           </a>
-          <a className="icono-redes fs-4" href="MatíasNicolasLanzaCV.pdf" download>
+          <a className="icono-redes fs-4" href="Matias-LanzaCV.pdf" download>
             <abbr title="Descargar CV"><i className="bi bi-download"></i></abbr>
           </a>
         </div>

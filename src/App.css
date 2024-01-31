@@ -76,9 +76,10 @@
   height: 101vh;
   background-color: black;
   color: white;
-  overflow: hidden;
+  
 }
 .seccionesPresentacion img {
+  overflow: hidden;
   width: 40%;
   position: absolute;
   bottom: -100px;
@@ -154,6 +155,9 @@
   height: 100vh;
   background-color: rgb(255, 191, 191);
 }
+.profileContainer{
+  overflow: hidden;
+}
 .seccione-proyecto h1{
   font-family: 'Anonymous Pro', monospace;
   color:rgb(121, 119, 119);
@@ -200,11 +204,11 @@
 }
 .fondo-tec {
   height: 100%;
-  background-image: url('./../public/tec.jpg');
+  background-image: url('./../public/tec.png');
   background-size: cover;
   background-position: center;
 }
-.ctn-images{
+.ctn-images{  
   height: auto;
   display: flex;
   flex-direction: row;
