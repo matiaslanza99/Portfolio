@@ -66,59 +66,60 @@ function Contact() {
         });
     };
     return (
+      <Row className='secciones align-items-center justify-content-center' id="contacto"> 
 
-        <Row className='secciones align-items-center justify-content-center'id="contacto"> 
-
-          <Col xs={8} className="justify-content-center">
+          <Col xs={12} sm={8} className="justify-content-center">
               <h1 className="text-center">¡Contactame!</h1>
               <Form onSubmit={handleSubmit}>
-                <Row>
-                  <Col> 
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>Tu Email</Form.Label>
-                      <Form.Control 
-                        type="email" 
-                        name="user_email"
-                        placeholder="Ingresa aqui tu email" 
-                        className="form-input"
-                        required  
-                      />
-                    </Form.Group>
-                  </Col>
-                  <Col>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                      <Form.Label>Nombre Completo / Empresa</Form.Label>
-                      <Form.Control 
-                        name="user_name" 
-                        type="text" 
-                        placeholder="Ingresa aqui tu nombre" 
-                        className="form-input"
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col className="text-center">
-                    <Form.Label>Tu Mensaje</Form.Label>
-                   
-                      <Form.Control
-                        as="textarea"
-                        className="form-input-textarea"
-                        name="message"
-                        placeholder="Escribe tu mensaje aquí..."
-                        required
-                      />
-                   
-                    <button type="submit" className="btn-submit">
-                      Enviar
-                    </button>
-                  </Col>
-                </Row>
-              </Form>
-              
-          </Col>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>Tu Email</Form.Label>
+                  <Form.Control 
+                    type="email" 
+                    name="email"
+                    value={input.email}
+                    onChange={handleChange}
+                    placeholder="Ingresa aqui tu email" 
+                    className="form-input"
+                    required  
+                  />
+                  {error.email && <p className="error-msg">{error.email}</p>}
+                </Form.Group>
 
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label>Nombre Completo / Empresa</Form.Label>
+                  <Form.Control 
+                    name="name" 
+                    type="text" 
+                    value={input.name}
+                    onChange={handleChange}
+                    placeholder="Ingresa aqui tu nombre" 
+                    className="form-input"
+                    required
+                  />
+                  {error.name && <p className="error-msg">{error.name}</p>}
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicMessage">
+                  <Form.Label>Tu Mensaje</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    className="form-input-textarea"
+                    name="mensaje"
+                    value={input.mensaje}
+                    onChange={handleChange}
+                    placeholder="Escribe tu mensaje aquí..."
+                    required
+                  />
+                  {error.mensaje && <p className="error-msg">{error.mensaje}</p>}
+                </Form.Group>
+
+                <Col className="text-center">
+                  <button type="submit" className="btn-submit">
+                    Enviar
+                  </button>
+                </Col>
+              </Form>
+          </Col>
         </Row>
      
     );

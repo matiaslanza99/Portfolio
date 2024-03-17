@@ -283,3 +283,47 @@
 .tecsUsed:hover {
   color: rgb(231, 231, 231);
 }
+@media screen and (max-width: 800px) {
+  .ctn-images{
+    display: flex;
+    flex-direction: column;
+  }
+  .ctn-img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+  }
+  .seccione-proyecto{
+    height: auto;
+    padding: 10px;
+  }
+  .seccionesPresentacion img{
+    width: 70%;
+    top:70%;
+  }
+  .seccionesPresentacion .nameImg{
+    width: 40%;
+  }
+  .seccionesPresentacion .fullStackImg{
+    top: 40%;
+    width: 50%;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -53%);
+  }
+  #contacto{
+    display: flex;
+    flex-direction: column;
+  }
+  #sobremi{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .fondo-tec{
+    display: none;
+  }
+}
