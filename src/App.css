@@ -333,4 +333,19 @@
   .seccionesContacto{
    gap: 20px;
   }
+  .seccionesPresentacion  .lampara1{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    transform: translateX(-50%);
+    transform: scaleX(-1);
+  }
+  .seccionesPresentacion  .lampara2{
+    width: 15%;
+    position: absolute;
+    top:0;
+    left: 70%;
+    transform: translateX(-50%);
+  }
 }
