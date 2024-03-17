@@ -68,7 +68,7 @@ function Contact() {
     return (
       <Row className='secciones align-items-center justify-content-center' id="contacto"> 
 
-          <Col xs={12} sm={8} className="justify-content-center">
+          <Col xs={10} sm={8} className="justify-content-center">
               <h1 className="text-center">¡Contactame!</h1>
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

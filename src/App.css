@@ -149,11 +149,13 @@
 }
  
 .secciones{
-  height: 100vh;
+  height: 100%;
+  border: solid rgb(0, 240, 180) 1px;
 }
 .seccione-proyecto{
   height: 100vh;
   background-color: rgb(255, 191, 191);
+  border: solid rgb(0, 240, 180) 1px;
 }
 .profileContainer{
   overflow: hidden;
@@ -314,6 +316,8 @@
   #contacto{
     display: flex;
     flex-direction: column;
+    height: min-content;
+    margin-top: 55%;
   }
   #sobremi{
     padding: 2%;
@@ -325,5 +329,8 @@
   }
   .fondo-tec{
     display: none;
+  }
+  .seccionesContacto{
+   gap: 20px;
   }
 }
