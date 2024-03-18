@@ -150,12 +150,12 @@
  
 .secciones{
   height: 100%;
-  border: solid rgb(0, 240, 180) 1px;
+ 
 }
 .seccione-proyecto{
   height: 100vh;
   background-color: rgb(255, 191, 191);
-  border: solid rgb(0, 240, 180) 1px;
+
 }
 .profileContainer{
   overflow: hidden;
@@ -336,7 +336,7 @@
   .seccionesPresentacion  .lampara1{
     width: 25%;
     position: absolute;
-    top: 0;
+    top:-20px;
     left: 20%;
     transform: translateX(-50%);
     transform: scaleX(-1);
@@ -344,7 +344,7 @@
   .seccionesPresentacion  .lampara2{
     width: 15%;
     position: absolute;
-    top:0;
+    top:-20px;
     left: 70%;
     transform: translateX(-50%);
   }
