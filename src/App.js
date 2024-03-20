@@ -13,39 +13,20 @@ function App() {
   return (
     <>
         <NavBar/>
-        <Parallax pages={4}>
-        <Container fluid>
-          <ParallaxLayer 
-            offset={0}
-            speed={0.2}
-            >
+
             <Home/> 
-          </ParallaxLayer>
+      
 
-          <ParallaxLayer 
-            offset={1}
-            speed={0.3}>
             <AboutMe/>
-          </ParallaxLayer>
+        
 
-          <ParallaxLayer 
-            offset={2}
-            speed={0.2}
-            >
             <Proyects/>     
-          </ParallaxLayer>
-
-            <ParallaxLayer 
-              offset={3}
-              speed={0.1}
-            >
+      
               <Contact/>
 
-            </ParallaxLayer>
             
-          </Container>
+
               <Footer/>
-        </Parallax>
     </>
   );
 }

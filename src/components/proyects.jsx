@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 function Proyects() {
   return (
-    <Row className='seccione-proyecto align-items-center justify-content-center' id="proyectos">
+    <Row className='secciones-proyectos align-items-center justify-content-center' id="proyectos">
           <Col sm={10}>
             <Col className="text-center">
               <h1>Mis Proyectos</h1>
