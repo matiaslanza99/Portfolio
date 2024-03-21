@@ -308,6 +308,10 @@
   .secciones-proyectos{
     height:fit-content;
     padding: 10px;
+    margin-bottom: 20%;
+  }
+  .seccionesPresentacion{
+    margin-bottom: 20%;
   }
   .seccionesPresentacion img{
     width: 70%;
@@ -336,6 +340,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 20%;
   }
   .fondo-tec{
     display: none;

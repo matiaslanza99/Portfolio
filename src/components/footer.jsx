@@ -1,7 +1,7 @@
 function Footer() {
     return (
       <footer>
-        <div className="text-center py-2 position-fixed bottom-0 w-100">
+        <div className="text-center py-2  w-100">
           <a className="icono-redes fs-4" href="https://www.linkedin.com/in/matias-nicolas-lanza-091955244/">
             <abbr title="Visitar LinkedIn"><i className="bi bi-linkedin "></i></abbr>
           </a>

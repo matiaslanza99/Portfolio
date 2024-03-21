@@ -67,12 +67,11 @@ function Contact() {
     };
     return (
         <Row className=' align-items-center justify-content-center'id="contacto"> 
-
-          <Col xs={8}  className="justify-content-center">
+          <Col xs={10} md={8}  className="justify-content-center">
               <h1 className="text-center">¡Contactame!</h1>
               <Form onSubmit={handleSubmit}>
                 <Row>
-                  <Col> 
+                  <Col xs={12} md={6}> 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Tu Email</Form.Label>
                       <Form.Control 
@@ -84,7 +83,7 @@ function Contact() {
                       />
                     </Form.Group>
                   </Col>
-                  <Col>
+                  <Col xs={12} md={6}>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                       <Form.Label>Nombre/Empresa</Form.Label>
                       <Form.Control 
@@ -117,11 +116,8 @@ function Contact() {
                   </Col>
                 </Row>
               </Form>
-              
           </Col>
-
         </Row>
-     
     );
   }
   
