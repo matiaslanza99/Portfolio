@@ -27,7 +27,7 @@ function Proyects() {
                   </div>
 
                   <div className="ctn-img">
-                    <a className="SaS" href="https://pf-grupo-20.vercel.app/">
+                    <a className="SaS" href="https://github.com/Galy77/PF-Grupo-20">
                     <img src="pp1.jpg" alt="pp1" />
                     </a> 
                   </div>
