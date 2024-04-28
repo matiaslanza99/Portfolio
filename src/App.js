@@ -9,7 +9,6 @@ import Home from "./components/home";
 function App() {
   return (
     <>
-        <NavBar/>
         <Home/> 
         <AboutMe/>
         <Proyects/>     
